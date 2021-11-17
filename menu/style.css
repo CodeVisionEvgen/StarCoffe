@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:  url('../image/background.jpg');
+    max-height: max-content;
+}
+button:hover {
+    cursor: pointer;
+}
+header {
+    background-color: antiquewhite;
+    width: 100%;
+    max-width: 1920px;
+    border-bottom: 2px solid coral;
+    position: fixed;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 20%;
+    z-index: 100;
+}
+.nameImg > h1 {
+    margin-top: 50%;
+    color: rgb(255, 105, 51);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nameImg {
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+.katalog {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-gap: 40%;
+}
+.katalog > a:hover {
+    cursor: pointer;
+}
+.katalog > a {
+    color: black;
+    font-size: 16pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+    height: max-content;
+}
+.loginReg > h4 {
+    position: relative;
+    left: 2%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginReg > a {
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(236, 236, 236);
+    border: 2px solid goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.menuCoffe {
+    position: relative;
+    color: rgb(255, 94, 0);
+    background-color: rgb(255, 249, 236);
+    border: 2px solid burlywood;
+    text-align: center;
+    top: 170px;
+}
+.coffeTop {
+    display: grid;
+    grid-template-columns: max-content max-content  max-content max-content max-content max-content max-content max-content;
+}
+figure > img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+}
+figure {
+    background-color: cornsilk;
+    height: 150px;
+    border: 1px solid chocolate;
+    width: max-content;
+    padding: 10px;
+}
+figure > img:hover {
+    transform: scale(1.04);
+    transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 1200px) {
+    .coffeTop {
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+    }
+    header {
+        grid-gap: 10%;
+    }
+    .katalog {
+    grid-gap: 15%;
+    top: 10%;
+    right: 10%;
+    }
+}
+@media screen and (max-width: 500px) {
+				   				figure > img {
+					width: 75px;	
+					height: 75px;		
+				}
+			  figure {
+			  				height: 100px;
+			  }
+    .menuCoffe {
+    top: 100px;
+    				width: 350px;
+    }
+    .coffeTop {
+    
+        grid-template-columns: max-content max-content;
+    }
+    .coffeTop > a {
+    				position: relative;
+    				left: 23px;
+    }
+    .menuCoffe > h2 {
+    position: relative;
+    				left: -10px;
+    }
+        .loginReg > a {
+           margin-top: 5px;
+           z-index: 2;
+        }
+ 
+       
+          
+        .nameImg > img {
+            position: relative;
+            left: 0px;
+           
+            height: 100px;
+            width: 100px;
+        }
+        .loginReg {
+            height: 1px;
+            z-index: 100;
+            right: 250px;
+                position: relative;
+   }
+ 
+   .loginReg > h4 {
+                   top: 20px;
+   }
+        .katalog {
+            z-index: 20;
+            right: 115px;
+            grid-gap: 10%;
+            }
+       
+        .nameImg > h1 {
+        position: relative;
+                        font-size: 13pt;
+                        top: 10px;
+        }
+    
+    }

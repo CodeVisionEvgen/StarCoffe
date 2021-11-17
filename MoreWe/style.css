@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:  url('../image/background.jpg');
+    max-height: max-content;
+}
+button:hover {
+    cursor: pointer;
+}
+header {
+    background-color: antiquewhite;
+    width: 100%;
+    max-width: 1920px;
+    border-bottom: 2px solid coral;
+    position: fixed;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    grid-gap: 20%;
+    z-index: 100;
+}
+.nameImg > h1 {
+    margin-top: 50%;
+    color: rgb(255, 105, 51);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.nameImg {
+z-index: 1;
+    display: grid;
+    grid-template-columns: max-content max-content;
+}
+.nameImg > img {
+    width: 150px;
+    height: 150px;
+}
+.katalog {
+    position: relative;
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    grid-gap: 40%;
+}
+.katalog > a:hover {
+    cursor: pointer;
+}
+.katalog > a {
+    z-index: 1000;
+    color: black;
+    font-size: 16pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    text-decoration: none;
+    height: max-content;
+}   
+.loginReg > h4 {
+    position: relative;
+    left: 2%;
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.loginReg > a {
+    padding: 1px;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(236, 236, 236);
+    border: 2px solid goldenrod;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content-More {
+    padding: 10px;
+    width: max-content;
+    background-color: antiquewhite;
+    border: 3px solid coral;
+    border-radius: 6px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 170px;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content-More > figure > img {
+    width: 400px;
+    border-radius: 2px;
+}
+.content-More > figure > figcaption {
+    font-family: serif;
+    font-style: italic;
+}
+.content-More > p {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+.new {
+    border-radius: 7px;
+    background-color: rgb(255, 245, 202);
+    padding: 4px;
+    display: grid;
+    grid-gap: 200px;
+    grid-template-columns: max-content max-content;
+}
+.new > p {
+    position: relative;
+    padding: 5px;
+    width: 400px;
+    left: 100px;
+}
+.new > p > bold {
+    font-weight: bold;
+}
+.new > figure > img {
+    border-radius: 5px;
+    width: 328px;
+    height: 500px;
+    object-fit: cover;
+}
+@media screen and (max-width: 1200px) {
+    .new {
+        grid-gap: 0px;
+    }
+    .new > p {
+        left: 0px;
+    }
+    .content-More > p {
+        width: 700px;
+    }
+    header {
+        grid-gap: 10%;
+    }
+    .katalog {
+        grid-gap: 15%;
+        top: 10%;
+        right: 10%;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .content-More > * {
+        justify-content: center;
+    }
+    .new {
+        border-radius: 7px;
+        background-color: rgb(255, 245, 202);
+        padding: 4px;
+        display: grid;
+        grid-template-columns: max-content;
+    }
+    .new > figure > img {
+        border-radius: 5px;
+        width: 328px;
+        height: 200px;
+    }
+    .new > p {
+        justify-content: center;
+        position: relative;
+        padding: 5px;
+        width: 320px;
+        left: 50px;
+    }
+    .content-More > p {
+        width: 320px;
+    }
+    .loginReg > a {
+        margin-top: 15px;
+     }
+     .nameImg {
+        width: 1px; 
+       
+       }
+       .nameImg > img {
+        position: relative;
+        left: 0px;
+       
+        height: 100px;
+        width: 100px;
+    }
+    .loginReg {
+    		 right: 90px;
+    		 	position: relative;
+    }
+  
+    .loginReg > h4 {
+    				top: 20px;
+    }
+    .katalog {
+    left: 60px;
+        grid-gap: 10%;
+        }
+        .nameImg > h1 {
+            position: relative;
+                            font-size: 13pt;
+                            top: 10px;
+            }
+        
+}
